@@ -1,12 +1,25 @@
 .pet-card {
-  background-color: var(--card-bg);
-  border-radius: var(--border-radius);
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  text-align: center;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
 }
 
-.pet-name {
+.pet-card h3 {
+  margin-top: 0;
   color: var(--primary-color);
-  margin-bottom: 10px;
+}
+
+.pet-card .status.good { color: #38a169; }
+.pet-card .status.warn { color: #dd6b20; }
+
+.action-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
