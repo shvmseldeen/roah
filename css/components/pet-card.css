@@ -1,0 +1,12 @@
+.pet-card {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.pet-name {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
