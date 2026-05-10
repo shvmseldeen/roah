@@ -1,14 +1,17 @@
-// A mock function to simulate fetching data from a database
-export async function getPets() {
+// This file focuses entirely on getting data. No UI logic allowed here.
+export async function fetchPets() {
   try {
-    // In the future, replace this with an actual fetch() call to your backend
+    // Replace with your actual backend API endpoint
+    // const response = await fetch('http://localhost:5000/api/pets');
+    // return await response.json();
+    
+    // Mock data for demonstration
     return [
-      { id: 1, name: "Bella", type: "Dog", breed: "Labrador" },
-      { id: 2, name: "Luna", type: "Cat", breed: "Siamese" },
-      { id: 3, name: "Charlie", type: "Dog", breed: "Beagle" }
+      { id: 1, name: "Max", species: "Dog", status: "Healthy" },
+      { id: 2, name: "Whiskers", species: "Cat", status: "Checkup Needed" }
     ];
   } catch (error) {
-    console.error("Failed to load pets", error);
+    console.error("Error fetching data:", error);
     return [];
   }
 }
